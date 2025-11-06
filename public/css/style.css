@@ -1,0 +1,90 @@
+body {
+  font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #555 !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+pre.line-numbers {
+  background: #fefefe !important;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  padding: 1.25rem !important;
+  font-size: 13px;
+}
+
+footer h5 {
+  font-size: 1rem;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #ffffff 0%, #f3f7ff 100%) !important;
+}
+
+/* Gradient header section */
+.bg-gradient-light {
+  background: linear-gradient(90deg, #f8fbff 0%, #f3f6fb 50%, #f8fbff 100%);
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-tabs .nav-link {
+  color: #444;
+  font-weight: 500;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #e66a0a;
+  color: #000;
+  background: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #000;
+}
+
+.card pre {
+  background: #fdfdfd !important;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+
+
+
+
+
+#updateCode, #copyBtn {
+  min-width: 130px;
+  font-weight: 500;
+}
+
+#updateCode:focus, #copyBtn:focus {
+  box-shadow: none;
+}
+
+#copyBtn.btn-outline-secondary {
+  border-color: #ced4da;
+  color: #333;
+}
+
+#copyBtn.btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+}

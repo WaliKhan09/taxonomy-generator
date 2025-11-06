@@ -1,0 +1,103 @@
+<%- include('partials/header') %>
+
+<!-- Hero Section -->
+<section class="bg-gradient-light py-5 text-center border-bottom mb-4">
+  <h2 class="fw-semibold mb-3">Taxonomy Generator</h2>
+  <p class="text-muted mb-0">Easily create and export WordPress taxonomy snippets</p>
+</section>
+
+<!-- Tabs Navigation -->
+<ul class="nav nav-tabs justify-content-center mb-4" id="generatorTabs" role="tablist">
+  <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pane-intro" type="button">Intro</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-general" type="button">General</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-taxonomy" type="button">Taxonomy</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-labels" type="button">Labels</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-visibility" type="button">Visibility</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-query" type="button">Query</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-permalinks" type="button">Permalinks</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-capabilities" type="button">Capabilities</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-restapi" type="button">REST API</button></li>
+  <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pane-other" type="button">Other</button></li>
+</ul>
+
+<form id="genForm">
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="pane-intro">
+      <div class="card border-0 mb-4">
+        <div class="card-body text-center py-4">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="row text-start mt-3">
+                <div class="col-md-4">
+                  <h6 class="fw-bold mb-2">Overview</h6>
+                  <p class="small text-muted">
+                    Use this tool to create custom code for <a href="#" class="text-decoration-none">Taxonomies</a>
+                    using the <code>register_taxonomy()</code> function.
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="fw-bold mb-2">Usage</h6>
+                  <ul class="small text-muted ps-3">
+                    <li>Fill in the user-friendly form.</li>
+                    <li>Click the “Update Code” button.</li>
+                    <li>Copy the code to your project.</li>
+                    <li>Or save it as a snippet for later use.</li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="fw-bold mb-2">Examples</h6>
+                  <ul class="small ps-3">
+                    <li><a href="#" class="text-decoration-none">Music Genre</a></li>
+                    <li><a href="#" class="text-decoration-none">Book Publisher</a></li>
+                    <li><a href="#" class="text-decoration-none">Car Manufacturer</a></li>
+                    <li><a href="#" class="text-decoration-none">Region</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- card -->
+    </div>
+
+    <div class="tab-pane fade" id="pane-general"><%- include('tabs/general') %></div>
+    <div class="tab-pane fade" id="pane-taxonomy"><%- include('tabs/taxonomy') %></div>
+    <div class="tab-pane fade" id="pane-labels"><%- include('tabs/labels') %></div>
+    <div class="tab-pane fade" id="pane-visibility"><%- include('tabs/visibility') %></div>
+    <div class="tab-pane fade" id="pane-query"><%- include('tabs/query') %></div>
+    <div class="tab-pane fade" id="pane-permalinks"><%- include('tabs/permalinks') %></div>
+    <div class="tab-pane fade" id="pane-capabilities"><%- include('tabs/capabilities') %></div>
+    <div class="tab-pane fade" id="pane-restapi"><%- include('tabs/restapi') %></div>
+    <div class="tab-pane fade" id="pane-other"><%- include('tabs/other') %></div>
+  </div>
+
+  <!-- <div class="text-center my-4">
+    <button id="updateCode" type="button" class="btn btn-dark me-2">Update Code</button>
+    <button id="copyBtn" type="button" class="btn btn-outline-secondary">Copy</button>
+  </div> -->
+   <div class="text-center my-4">
+      <button id="generateAjax" type="button" class="btn btn-dark me-2">Update Code</button>
+      <button id="copyBtn" type="button" class="btn btn-outline-secondary">Copy</button>
+    </div>
+
+</form>
+
+
+<!-- Buttons -->
+<!-- <div class="text-center my-4">
+  <button id="updateCode" type="button" class="btn btn-dark me-2">Update Code</button>
+  <button id="copyBtn" type="button" class="btn btn-outline-secondary">Copy</button>
+</div> -->
+
+
+
+<!-- Code Preview -->
+<div class="card mx-auto shadow-sm mb-5" style="max-width: 1000px;">
+  <div class="card-body p-0">
+    <pre id="generatedContainer" class="line-numbers m-0" style="background: #f8f9fa;">
+<code id="generatedCode" class="language-php"><%= generated %></code>
+    </pre>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

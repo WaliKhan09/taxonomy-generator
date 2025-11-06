@@ -1,0 +1,46 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row gx-4">
+      <div class="col-md-4">
+        <label class="form-label">Taxonomy Key</label>
+        <input type="text" name="taxonomy[key]" class="form-control" placeholder="taxonomy" value="<%= form.key || '' %>">
+        <div class="form-text">Key used in the code. Up to 32 characters, lowercase.</div>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Name (Singular)</label>
+        <input type="text" name="taxonomy[singular]" class="form-control" placeholder="Taxonomy" value="<%= form.singular || '' %>">
+        <div class="form-text">Taxonomy singular name.</div>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Link To Post Type(s)</label>
+        <input type="text" name="taxonomy[post_types]" class="form-control" placeholder="post,page" value="<%= form.post_types || 'post' %>">
+        <div class="form-text">Comma separated list of Post Types.</div>
+      </div>
+    </div>
+
+    <div class="row gx-4 mt-3">
+      <div class="col-md-4">
+        <label class="form-label">Name (Plural)</label>
+        <input type="text" name="taxonomy[plural]" class="form-control" placeholder="Taxonomies" value="<%= form.plural || '' %>">
+        <div class="form-text">Taxonomy plural name.</div>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Hierarchical</label>
+        <select name="taxonomy[hierarchical]" class="form-select">
+          <option value="no" <%= (form.hierarchical === false || form.hierarchical === 'no') ? 'selected' : '' %>>No (like tags)</option>
+          <option value="yes" <%= (form.hierarchical === true || form.hierarchical === 'yes') ? 'selected' : '' %>>Yes (like categories)</option>
+        </select>
+        <div class="form-text">Hierarchical taxonomy allows descendants.</div>
+      </div>
+
+      <div class="col-md-4">
+        <!-- placeholder, maybe later: slug preview -->
+        <label class="form-label">&nbsp;</label>
+        <div class="form-control-plaintext"> </div>
+      </div>
+    </div>
+  </div>
+</div>

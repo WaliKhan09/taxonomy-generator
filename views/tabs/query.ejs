@@ -1,0 +1,21 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row gx-4">
+      <div class="col-md-4">
+        <label class="form-label">Query Variable</label>
+        <select name="query[default]" class="form-select">
+          <option value="default">Default (taxonomy key)</option>
+          <option value="false">No query variable</option>
+        </select>
+        <div class="form-text">
+          Direct query variable used in WP_Query. e.g., <code>{ taxonomy: 'genre', term: 'comedy' }</code>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Custom Query Variable</label>
+        <input type="text" name="query[custom_query]" class="form-control" placeholder="custom_var">
+        <div class="form-text">Custom query variable name.</div>
+      </div>
+    </div>
+  </div>
+</div>

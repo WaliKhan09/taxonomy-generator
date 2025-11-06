@@ -1,0 +1,98 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row gx-4">
+      <div class="col-md-3">
+        <label class="form-label">Menu Name</label>
+        <input type="text" name="labels[menu_name]" class="form-control" placeholder="Taxonomy" value="<%= form.menu_name || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">New Item Name</label>
+        <input type="text" name="labels[new_item]" class="form-control" placeholder="New Item Name" value="<%= form.new_item || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Separate Items with commas</label>
+        <input type="text" name="labels[separate_items]" class="form-control" placeholder="Separate items with commas" value="<%= form.separate_items || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Search Items</label>
+        <input type="text" name="labels[search_items]" class="form-control" placeholder="Search Items" value="<%= form.search_items || '' %>">
+      </div>
+    </div>
+
+    <div class="row gx-4 mt-3">
+      <div class="col-md-3">
+        <label class="form-label">All Items</label>
+        <input type="text" name="labels[all_items]" class="form-control" placeholder="All Items" value="<%= form.all_items || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Add New Item</label>
+        <input type="text" name="labels[add_new_item]" class="form-control" placeholder="Add New Item" value="<%= form.add_new_item || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Add or Remove Items</label>
+        <input type="text" name="labels[add_or_remove_items]" class="form-control" placeholder="Add or remove items" value="<%= form.add_or_remove_items || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Not Found</label>
+        <input type="text" name="labels[not_found]" class="form-control" placeholder="Not Found" value="<%= form.not_found || '' %>">
+      </div>
+    </div>
+
+    <div class="row gx-4 mt-3">
+      <div class="col-md-3">
+        <label class="form-label">Parent Item</label>
+        <input type="text" name="labels[parent_item]" class="form-control" placeholder="Parent Item" value="<%= form.parent_item || '' %>">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Edit Item</label>
+        <input type="text" name="labels[edit_item]" class="form-control" placeholder="Edit Item" value="<%= form.edit_item || '' %>">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">Choose From Most Used</label>
+        <input type="text" name="labels[choose_from_most_used]" class="form-control" placeholder="Choose from the most used" value="<%= form.choose_from_most_used || '' %>">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label">No items</label>
+        <input type="text" name="labels[no_items]" class="form-control" placeholder="No items" value="<%= form.no_items || '' %>">
+      </div>
+    </div>
+
+    <div class="row gx-4 mt-3">
+      <div class="col-md-3">
+        <label class="form-label">Parent Item (colon)</label>
+        <input type="text" name="labels[parent_item_colon]" class="form-control" placeholder="Parent Item:" value="<%= form.parent_item_colon || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Update Item</label>
+        <input type="text" name="labels[update_item]" class="form-control" placeholder="Update Item" value="<%= form.update_item || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Popular Items</label>
+        <input type="text" name="labels[popular_items]" class="form-control" placeholder="Popular Items" value="<%= form.popular_items || '' %>">
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">Items list</label>
+        <input type="text" name="labels[items_list]" class="form-control" placeholder="Items list" value="<%= form.items_list || '' %>">
+      </div>
+    </div>
+
+    <div class="row gx-4 mt-3">
+      <div class="col-md-3">
+        <label class="form-label">View Item</label>
+        <input type="text" name="labels[view_item]" class="form-control" placeholder="View Item" value="<%= form.view_item || '' %>">
+      </div>
+      <div class="col-md-9 d-flex align-items-center">
+        <p class="small text-muted ms-3">Add or customize labels. Leave blank to use defaults.</p>
+      </div>
+    </div>
+  </div>
+</div>

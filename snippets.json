@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1762420358283,
+    "title": "My Taxonomy Snippet",
+    "code": "<?php\n// Register Custom Taxonomy\nfunction custom_taxonomy_taxonomy() {\n\n$labelsArr\n\n\t$args = array(\n\t\t'labels' => $labels,\n\t\t'public' => true,\n\t\t'show_ui' => true,\n\t\t'show_in_rest' => true,\n\t\t'rewrite' => array( 'slug' => 'custom_taxonomy' ),\n\t\t'hierarchical' => false\n\t);\n\n\tregister_taxonomy( 'custom_taxonomy', array( 'post' ), $args );\n\n}\nadd_action( 'init', 'custom_taxonomy_taxonomy', 0 );\n?>",
+    "created_at": "2025-11-06T09:12:38.283Z"
+  }
+]
