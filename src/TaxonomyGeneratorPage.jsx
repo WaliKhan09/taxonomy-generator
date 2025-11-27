@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import logo from './assets/logo.png';
 import General from "./components/tabs/General";
 import Taxonomy from "./components/tabs/Taxonomy";
 import Labels from "./components/tabs/Labels";
@@ -85,7 +86,7 @@ export default function TaxonomyGeneratorPage() {
                 <div className="bg-gradient-to-r from-purple-50 via-fuchsia-50 to-violet-50">
                     <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">G</div>
+                            <img src={logo} alt="Taxonomy Generator Logo" className="w-10 h-10 object-contain" />
                             <h1 className="text-lg font-medium">Taxonomy Generator</h1>
                         </div>
 

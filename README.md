@@ -2,6 +2,8 @@
 
 A modern, user-friendly React application for generating WordPress taxonomy registration code. Built with **React**, **Vite**, and **Tailwind CSS**.
 
+🔗 **Live Demo:** [https://taxonomy-generator.vercel.app/](https://taxonomy-generator.vercel.app/)
+
 ![Taxonomy Generator Preview](./screenshot.png)
 
 ## 🚀 Features
